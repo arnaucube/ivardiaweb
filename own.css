@@ -24,9 +24,23 @@ a:active {
   left: 0px;
   top: 0px;
 }
-
+.own-lang{
+  text-align: right;
+  margin-right: 50px;
+  display: block;
+}
+.own-lang a:link{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px;
+}
+.own-lang a:visited{
+  color: #ffffff;
+}
 .own-menu{
-  margin-top: 5%;
+  display: block;
 }
 .own-overImage-logo{
   border: 1px solid #000000;
@@ -53,7 +67,7 @@ a:active {
 }
 .own-mainTitleBox{
   left: 0;
-  margin-top: 14%;
+  margin-top: 10%;
   width: 100%;
   text-align: center;
 }
@@ -73,14 +87,21 @@ a:active {
 .own-socialNetworks{
   margin-left: 2%;
   margin-top: 5%;
+  display: inline-block;
 }
 .own-socialNetwork{
   display: inline-block;
   border: 1px solid #000000;
 }
+.own-teaser{
+  float: right;
+  margin-right: 2%;
+  margin-top: calc(6% + 10px);
+}
 
 .temp-marge1{
-  margin-top: 50%;
+  display: inline-block;
+  margin-top: 10%;
 }
 .own-caixaDescripcioIndex{
   margin-top: 50px;
@@ -91,8 +112,8 @@ a:active {
 }
 .own-caixaImatgesIndex{
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  text-align: center;
   margin-bottom: 100px;
 }
 .own-imatgeIndex{
@@ -101,10 +122,9 @@ a:active {
 }
 
 .own-footer{
-  margin-top: auto;
-  margin-left: auto;
-  background: #262626;
   width: 100%;
+  text-align: center;
+  background: #262626;
   height: 250px;
   padding: 2%;
 }
