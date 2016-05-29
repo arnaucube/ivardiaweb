@@ -208,6 +208,7 @@ a:active {
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 40px;
+  max-width: 100px;
 }
 .own-linksLeft a:link{
   text-decoration: none;
@@ -227,7 +228,7 @@ a:active {
 .own-orange{
   color: #C85127!important;
 }
-.own-nosaltresText{
+.own-projecteText{
   display: inline-block;
   max-width: 600px;
   text-align: left;
@@ -251,4 +252,31 @@ a:active {
 }
 .own-rightBox a:hover{
   color: #C85127;
+}
+
+.own-textBoxLeft{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  max-width: 100px;
+  text-align: left;
+  font-weight: bold;
+}
+.own-nosaltresCenterRight{
+  display: inline-block;
+  max-width: 800px;
+  text-align: left;
+  vertical-align: top;
+}
+.own-imgTopText{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.own-nosaltresText{
+  display: inline-block;
+  max-width: 700px;
+  text-align: left;
+  vertical-align: top;
 }
