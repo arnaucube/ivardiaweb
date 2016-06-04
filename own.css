@@ -13,6 +13,14 @@ a:hover {
 a:active {
    color: #C85127;
 }*/
+<style>
+@font-face {
+    font-family: jauria;
+
+    src: local("Helvetica Neue Bold"),
+       local("HelveticaNeue-Bold"),
+       url(tipos/jauria/jauria-Italic-v.otf);
+}
 
 .own-container{
 }
@@ -76,11 +84,15 @@ a:active {
   margin-top: 10%;
   width: 100%;
   text-align: center;
+  font-family: jauria;
 }
 .own-mainTitle{
   color: #ffffff;
   background: #C85127;
   font-size: 45px;
+  width: 400px;
+  margin-left: auto; /*temporal*/
+  margin-right: auto;
 }
 .own-subTitle{
   color: #ffffff;
@@ -102,10 +114,13 @@ a:active {
   margin-right: 5px;
   cursor: pointer;
 }
+.own-socialNetwork-facebookMargin{
+  margin-right: 10px;
+}
 .own-teaser{
   float: right;
   margin-right: 2%;
-  margin-top: calc(6% + 10px);
+  margin-top: calc(6% - 10px);
   color: #ffffff;
   font-weight: bold;
   font-size: 18px;
@@ -114,6 +129,11 @@ a:active {
 .temp-marge1{
   display: inline-block;
   margin-top: 10%;
+}
+.own-whiteOverImage{
+  background: #ffffff;
+  padding-top: 10px;
+
 }
 .own-caixaDescripcioIndex{
   margin-top: 50px;
@@ -132,6 +152,7 @@ a:active {
 .own-imatgeIndex{
   display: inline-block;
   margin: 2%;
+  width: 210px;
 }
 /*  /index  */
 
@@ -286,7 +307,7 @@ a:active {
 }
 .own-nosaltresText{
   display: inline-block;
-  max-width: 700px;
+  max-width: 650px;
   text-align: left;
   vertical-align: top;
 }
