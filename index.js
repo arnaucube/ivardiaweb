@@ -16,3 +16,7 @@ function OnLoadDefault(){
 function OnLoadIndex(){
   OnLoadDefault();
 }
+function OnLoadNosaltres(){
+  OnLoadDefault();
+  //document.getElementById("a-nosaltres").className+=" own-currentPageMenu";
+}
