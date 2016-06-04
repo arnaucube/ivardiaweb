@@ -18,5 +18,7 @@ function OnLoadIndex(){
 }
 function OnLoadNosaltres(){
   OnLoadDefault();
-  //document.getElementById("a-nosaltres").className+=" own-currentPageMenu";
-}
+  setTimeout(function(){
+    document.getElementsByClassName("own-menuButtons")[0].childNodes[3].className="own-currentPageMenu";
+  }, 500);
+  }

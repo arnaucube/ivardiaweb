@@ -126,6 +126,7 @@ a:active {
 }
 .own-verkami{
   /*border: 1px solid #000000;*/
+  margin-top: 20px;
   cursor: pointer;
 }
 .own-socialNetworks{
@@ -174,10 +175,33 @@ a:active {
   text-align: center;
   padding-bottom: 100px;
 }
-.own-imatgeIndex{
+.own-caixaImatgeIndex{
   display: inline-block;
   margin: 2%;
+}
+.own-imatgeIndex{
+  /*display: inline-block;*/
+
   width: 210px;
+}
+.own-caixaImatgeIndex .own-textHoverImage{
+  position: absolute;
+  visibility: hidden;
+  text-decoration: none;
+  /*display: inherit;*/
+  z-index: 1px;
+  background: rgba(200, 81, 39, 0.4);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 90px;
+  /*padding-left: 100px;*/
+  width: 210px;
+  height: 210px;
+}
+
+.own-caixaImatgeIndex:hover .own-textHoverImage{
+  visibility:visible;
 }
 /*  /index  */
 
@@ -250,7 +274,10 @@ a:active {
   color: #C85127;
 }
 .own-currentPageMenu{
-  color: #C85127;
+  color: #C85127!important;
+  border-bottom: 3px solid #C85127;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 .own-imgHeader{
   width: 100%;
@@ -318,7 +345,7 @@ a:active {
   color: #C85127;
 }
 
-@media (max-width:960px) {
+@media (max-width:1200px) {
   .own-textBoxLeft{
     display: inline-block;
     vertical-align: top;
@@ -330,16 +357,17 @@ a:active {
     font-weight: bold;
   }
 }
-@media (min-width:960px) {
+@media (min-width:1200px) {
   .own-textBoxLeft{
     display: inline-block;
     vertical-align: top;
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 40px;
-    max-width: 100px;
+    max-width: 150px;
     text-align: left;
     font-weight: bold;
+    font-size: 18px;
   }
 }
 
@@ -365,4 +393,5 @@ a:active {
   max-width: 650px;
   text-align: left;
   vertical-align: top;
+  padding-bottom: 40px;
 }
