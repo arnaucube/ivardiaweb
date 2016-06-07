@@ -161,14 +161,29 @@ a:active {
   padding-top: 10px;
 
 }
-.own-caixaDescripcioIndex{
-  margin-top: 50px;
-  margin-left:auto;
-  margin-right:auto;
-  max-width: calc(100% - 300px);
-  min-width: 320px;
-  background: #ffffff;
+@media (max-width:1080px) {
+  .own-caixaDescripcioIndex{
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: calc(100% - 300px);
+    min-width: 320px;
+    background: #ffffff;
+    font-size: 18px;
+  }
 }
+@media (min-width:1080px) {
+  .own-caixaDescripcioIndex{
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: calc(100% - 700px);
+    min-width: 320px;
+    background: #ffffff;
+    font-size: 18px;
+  }
+}
+
 .own-caixaImatgesIndex{
   margin-top: 50px;
   width: 100%;
@@ -326,10 +341,26 @@ a:active {
   padding-bottom: 40px;
 }
 
+
+.own-desplegableAmagat{
+  display: none;
+
+}
+.own-desplegable{
+  display: block;
+  z-index: 1;
+  position: absolute;
+  background: #C85127;
+  max-width: 600px;
+  margin-left: 18%;
+  padding: 30px;
+}
+
 .own-rightBox{
   display: inline-block;
   vertical-align: top;
   margin-top: 30px;
+  text-align: left;
 }
 .own-rightBox a:link{
   text-decoration: none;
@@ -337,6 +368,7 @@ a:active {
   font-weight: bold;
   display: block;
   margin: 10px;
+  margin-bottom: 30px;
 }
 .own-rightBox a:visited{
   color: #000000;
@@ -358,16 +390,16 @@ a:active {
   }
 }
 @media (min-width:1200px) {
-  .own-textBoxLeft{
+  .own-textBoxLeft{ /*a pantalla gran, barra lateral left*/
     display: inline-block;
     vertical-align: top;
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 40px;
-    max-width: 150px;
+    max-width: 200px;
     text-align: left;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -390,7 +422,7 @@ a:active {
 }
 .own-nosaltresText{
   display: inline-block;
-  max-width: 650px;
+  max-width: 600px;
   text-align: left;
   vertical-align: top;
   padding-bottom: 40px;
