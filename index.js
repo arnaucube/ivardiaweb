@@ -15,6 +15,15 @@ function OnLoadDefault(){
 
 function OnLoadIndex(){
   OnLoadDefault();
+  var numImg=0;
+  setInterval(function(){
+    document.getElementById("backgroundImage").src="imatges/background/background"+numImg+".jpg";
+    numImg++;
+    if(numImg>9)
+    {
+      numImg=0;
+    }
+  }, 5000);
 }
 function OnLoadNosaltres(){
   OnLoadDefault();
