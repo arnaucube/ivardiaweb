@@ -36,6 +36,10 @@ a:active {
     left: 0px;
     top: 0px;
 
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
   }
 }
 
@@ -48,7 +52,14 @@ a:active {
     left: 0px;
     top: 0px;
 
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
   }
+}
+.own-opactity0{
+  opacity: 0;
 }
 .own-langIndex{
   text-align: right;

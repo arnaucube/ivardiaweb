@@ -16,8 +16,18 @@ function OnLoadDefault(){
 function OnLoadIndex(){
   OnLoadDefault();
   var numImg=0;
+  var visibleImg=0;
   setInterval(function(){
-    document.getElementById("backgroundImage").src="imatges/background/background"+numImg+".jpg";
+
+    document.getElementById("backgroundImage"+visibleImg).className="own-indexBackgroundImage";
+    if(visibleImg==0){
+      visibleImg=1;
+    }else{
+      visibleImg=0;
+    }
+    document.getElementById("backgroundImage"+visibleImg).className+=" own-opacity0";
+    document.getElementById("backgroundImage"+visibleImg).src="imatges/background/background"+numImg+".jpg";
+
     numImg++;
     if(numImg>9)
     {
