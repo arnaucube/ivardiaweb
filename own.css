@@ -222,6 +222,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   font-size: 18px;
+	cursor: pointer;
 }
 
 .temp-marge1{
@@ -515,4 +516,8 @@ body {
   text-align: left;
   vertical-align: top;
   padding-bottom: 40px;
+}
+
+.own-inlineBlock{
+	display: inline-block!important;
 }
