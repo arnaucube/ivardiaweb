@@ -272,9 +272,10 @@ body {
 }
 .own-imatgeIndex{
   /*display: inline-block;*/
-
   width: 210px;
 }
+
+
 .own-caixaImatgeIndex .own-textHoverImage{
   position: absolute;
   visibility: hidden;
@@ -294,6 +295,49 @@ body {
 .own-caixaImatgeIndex:hover .own-textHoverImage{
   visibility:visible;
 }
+
+
+
+
+
+
+/* nosaltres apanyu */
+.own-caixaImatgesNosaltres{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 100px;
+  font: normal 18px 'got-medium', sans-serif;
+}
+.own-caixaImatgeNosaltres{
+  display: inline-block;
+  margin: 2%;
+}
+.own-imatgeNosaltres{
+  /*display: inline-block;*/
+  width: 170px;
+}
+.own-caixaImatgeNosaltres .own-textHoverImage{
+  position: absolute;
+  visibility: hidden;
+  text-decoration: none;
+  /*display: inherit;*/
+  z-index: 1px;
+  background: rgba(200, 81, 39, 0.4);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 80px;
+  /*padding-left: 100px;*/
+  width: 170px;
+  height: 170px;
+}
+
+.own-caixaImatgeNosaltres:hover .own-textHoverImage{
+  visibility:visible;
+}
+/* fi nosaltres apanyu */
+
 /*  /index  */
 
 
@@ -425,6 +469,9 @@ body {
   vertical-align: top;
   padding: 10px;
   padding-bottom: 40px;
+}
+.own-projecteText h3{
+    font: normal 25px 'got-medium', sans-serif;
 }
 
 

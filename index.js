@@ -10,7 +10,7 @@ function OnLoadDefault(){
         $('#HTMLfooter').load('HTMLfooter.html',function(){
           //
         });
-      });
+    });
 }
 
 function OnLoadIndex(){
