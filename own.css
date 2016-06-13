@@ -16,11 +16,11 @@ a:active {
 
 @font-face {
 	font-family: 'jauria-bold';
-	src: url('tipos/jauria/jauria-Bold-v.otf');
+	src: url('tipos/jauria/Jauria-Bold-v.otf');
 	src:
 		local('jauria'),
 		local('jauria'),
-		url('tipos/jauria/jauria-Bold-v.otf')
+		url('tipos/jauria/Jauria-Bold-v.otf')
 		format('opentype');
 }
 @font-face {
@@ -32,10 +32,14 @@ a:active {
 		url('tipos/jauria/jauria-Italic-v.otf')
 		format('opentype');
 }
-
+/*
+Light pel text
+Blak pel menu de dalt
+I medium pel submeni
+*/
 /* got */
 @font-face {
-	font-family: 'got-book';
+	font-family: 'got-light';
 	src: url('tipos/got/got_light.ttf');
 	src:
 		local('got'),
@@ -43,9 +47,26 @@ a:active {
 		url('tipos/got/got_light.ttf')
 		format('opentype');
 }
-
+@font-face {
+	font-family: 'got-black';
+	src: url('tipos/got/got_black.ttf');
+	src:
+		local('got'),
+		local('got'),
+		url('tipos/got/got_black.ttf')
+		format('opentype');
+}
+@font-face {
+	font-family: 'got-medium';
+	src: url('tipos/got/got_medium.ttf');
+	src:
+		local('got'),
+		local('got'),
+		url('tipos/got/got_medium.ttf')
+		format('opentype');
+}
 body {
-    font: normal 18px 'got-book', sans-serif;
+    font: normal 18px 'got-light', sans-serif;
 }
 
 
@@ -221,6 +242,7 @@ body {
     min-width: 320px;
     background: #ffffff;
     font-size: 18px;
+		font: normal 18px 'got-medium', sans-serif;
   }
 }
 @media (min-width:1080px) {
@@ -232,6 +254,7 @@ body {
     min-width: 320px;
     background: #ffffff;
     font-size: 18px;
+		font: normal 18px 'got-medium', sans-serif;
   }
 }
 
@@ -240,6 +263,7 @@ body {
   width: 100%;
   text-align: center;
   padding-bottom: 100px;
+  font: normal 18px 'got-medium', sans-serif;
 }
 .own-caixaImatgeIndex{
   display: inline-block;
@@ -280,6 +304,8 @@ body {
   height: 250px;
   padding-top: 20px;
   padding: 2%;
+	height: auto;
+	font: normal 16px 'got-medium', sans-serif;
 }
 .own-footer h3{
   color: #ffffff;
@@ -288,6 +314,10 @@ body {
    color: #C85127;
    text-decoration: none;
    display: block;
+	 margin-bottom: 20px;
+}
+.own-footer a:visited {
+   color: #C85127;
 }
 .own-footer a:hover {
    color: #dd7955;
@@ -296,6 +326,8 @@ body {
   display: inline-block;
   width: 250px;
   vertical-align: top;
+	text-align: left;
+	margin-left: 50px;
 }
 /* /footer */
 
@@ -324,6 +356,7 @@ body {
 .own-menuButtons{
   float: right;
   /*margin-right: 50px;*/
+  font: normal 18px 'got-black', sans-serif;
 }
 .own-menuButtons a:link{
   text-decoration: none;
@@ -361,6 +394,7 @@ body {
   margin-right: 40px;
   margin-bottom: 40px;
   max-width: 100px;
+  font: normal 18px 'got-medium', sans-serif;
 }
 .own-linksLeft a:link{
   text-decoration: none;
@@ -438,19 +472,20 @@ body {
     max-width: 600px;
     text-align: left;
     font-weight: bold;
+		font: normal 22px 'got-medium', sans-serif;
   }
 }
 @media (min-width:1200px) {
   .own-textBoxLeft{ /*a pantalla gran, barra lateral left*/
     display: inline-block;
     vertical-align: top;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 40px;
     max-width: 200px;
     text-align: left;
     font-weight: bold;
     font-size: 22px;
+		font: normal 22px 'got-medium', sans-serif;
   }
 }
 
@@ -466,10 +501,13 @@ body {
 }
 
 .own-nosaltresTitle{
-  font-size: 45px;
+  /*font-size: 45px;*/
   font-weight: bold;
   padding-left: 7%;
   text-align: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font: normal 55px 'got-black', sans-serif;
 }
 .own-nosaltresText{
   display: inline-block;
