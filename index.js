@@ -15,25 +15,30 @@ function OnLoadDefault(){
 
 function OnLoadIndex(){
   OnLoadDefault();
-  var numImg=0;
-  var visibleImg=0;
+  var numImg=3;
+  var visibleImg=1;
   setInterval(function(){
 
-    document.getElementById("backgroundImage"+visibleImg).className="own-indexBackgroundImage";
+    console.log(numImg);
+    console.log("visibleImg: " + visibleImg);
+
+
+    document.getElementById("backgroundImage"+visibleImg).className+=" own-opacity0";
+    document.getElementById("backgroundImage"+visibleImg).src="imatges/background/background"+numImg+".jpg";
     if(visibleImg==0){
       visibleImg=1;
     }else{
       visibleImg=0;
     }
-    document.getElementById("backgroundImage"+visibleImg).className+=" own-opacity0";
-    document.getElementById("backgroundImage"+visibleImg).src="imatges/background/background"+numImg+".jpg";
+
+    document.getElementById("backgroundImage"+visibleImg).className="own-indexBackgroundImage";
 
     numImg++;
     if(numImg>9)
     {
       numImg=0;
     }
-  }, 5000);
+  }, 4000);
 }
 function OnLoadNosaltres(){
   OnLoadDefault();
