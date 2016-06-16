@@ -1,5 +1,5 @@
 //http://placehold.it/1920x1080
-
+var actualWindow="";
 function OnLoadDefault(){
   /*$(document).ready(function(e) {
       $('#HTMLmenu').load('HTMLmenu.html',function(){
@@ -11,16 +11,20 @@ function OnLoadDefault(){
           //
         });
     });*/
-    $(window).bind('scroll', function () {
-      console.log($(window).scrollTop());
-        if ($(window).scrollTop() > 25) {
-            //$('.menu').addClass('own-menuFixed');
-            document.getElementById("menu").className="own-menuFixed";
-        } else {
-            //$('.menu').removeClass('own-menuFixed');
-            document.getElementById("menu").className="own-menu";
-        }
-    });
+    console.log(actualWindow);
+    if(actualWindow!="index")
+    {
+      $(window).bind('scroll', function () {
+        console.log($(window).scrollTop());
+          if ($(window).scrollTop() > 25) {
+              //$('.menu').addClass('own-menuFixed');
+              document.getElementById("menu").className="own-menuFixed";
+          } else {
+              //$('.menu').removeClass('own-menuFixed');
+              document.getElementById("menu").className="own-menu";
+          }
+      });
+    }
 }
 /*
 - La señora haciendo el saludo de la victoria (_013)
@@ -32,6 +36,7 @@ function OnLoadDefault(){
 - Gente (014, 074, 068, 071, 012)
 */
 function OnLoadIndex(){
+  actualWindow="index";
   OnLoadDefault();
   var numImg=3;
   var visibleImg=1;
