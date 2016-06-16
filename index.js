@@ -71,12 +71,14 @@ function OnLoadNosaltres(){
 }
 
 function OnClickCampanyesDeSuport(){
+  /*
   if(document.getElementById("desplegable").className=="own-desplegable")
   {
     document.getElementById("desplegable").className="own-desplegableAmagat";
   }else{
     document.getElementById("desplegable").className="own-desplegable";
   }
+  */
 }
 
 

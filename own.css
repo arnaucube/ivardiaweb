@@ -161,6 +161,8 @@ body {
 	/*border-bottom: 1px solid #010101;*/
 	width: 100%;
 	top: 0px;
+	left: 0px;
+	z-index: 10px;
 
 }
 .own-overImage-logo{
@@ -515,6 +517,7 @@ body {
 
 	position: absolute;
 	left: 0px;
+	z-index:0px;
 }
 .own-nosaltresContent{
   width: 100%;
