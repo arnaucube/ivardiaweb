@@ -1,5 +1,5 @@
 
-/*
+
 a:link {
    color: #C85127;
    text-decoration: none;
@@ -12,7 +12,7 @@ a:hover {
 }
 a:active {
    color: #C85127;
-}*/
+}
 
 @font-face {
 	font-family: 'jauria-bold';
@@ -66,11 +66,14 @@ I medium pel submeni
 		format('opentype');
 }
 body {
-    font: normal 18px 'got-light', sans-serif;
+
+		font: normal 16px 'got-light', sans-serif;
+		margin: 0;
+		padding: 0;
 }
 
 
-@media (min-width:900px) {
+/*@media (min-width:900px) {
   .own-container{
     padding-left: 80px;
     padding-right: 80px;
@@ -81,7 +84,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-}
+}*/
 
 /* index */
 
@@ -89,33 +92,46 @@ body {
   .own-indexBackgroundImage{
     width: 100%;
     /*height: 100%;*/
-    z-index: -1;
+    z-index: -2;
     position: fixed;
     left: 0px;
     top: 0px;
 
-    /*-webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;*/
   }
+	.own-telgris{
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+
+		background: rgba(0, 0, 0, 0.5);
+	}
 }
 
 @media (max-width:900px) {
   .own-indexBackgroundImage{
     /*width: 100%;*/
     height: 100%;
-    z-index: -1;
+    z-index: -2;
     position: fixed;
     left: 0px;
     top: 0px;
 
-    /*-webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;*/
   }
+	.own-telgris{
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+
+		background: rgba(0, 0, 0, 0.5);
+	}
 }
+
 .own-opacity0{
   opacity: 0;
 }
@@ -137,8 +153,15 @@ body {
 
 .own-menu{
   display: block;
-  /*padding-left: 50px;
-  padding-right: 50px;*/
+}
+.own-menuFixed{
+  /*display: block;*/
+	position: fixed;
+	background: #ffffff;
+	/*border-bottom: 1px solid #010101;*/
+	width: 100%;
+	top: 0px;
+
 }
 .own-overImage-logo{
   /*margin-left: 30px;*/
@@ -185,16 +208,17 @@ body {
 .own-mainTitle{
   color: #ffffff;
   background: #C85127;
-  font-size: 45px;
-  width: 400px;
+  font-size: 70px;
+  max-width: 500px;
   margin-left: auto; /*temporal*/
   margin-right: auto;
   font-family: 'jauria-bold', sans-serif;
 }
 .own-subTitle{
   color: #ffffff;
-  font-size: 24px;
+  font-size: 30px;
   font-family: 'jauria-cursiva', sans-serif;
+	margin-top: 8px;
 }
 .own-verkami{
   /*border: 1px solid #000000;*/
@@ -239,11 +263,13 @@ body {
     margin-top: 50px;
     margin-left:auto;
     margin-right:auto;
-    max-width: calc(100% - 300px);
+    max-width: calc(100% - 100px);
     min-width: 320px;
     background: #ffffff;
-    font-size: 18px;
+    font-size: 120%;
 		font: normal 18px 'got-medium', sans-serif;
+		text-align: center;
+		line-height: 125%;
   }
 }
 @media (min-width:1080px) {
@@ -251,11 +277,13 @@ body {
     margin-top: 50px;
     margin-left:auto;
     margin-right:auto;
-    max-width: calc(100% - 700px);
+    max-width: calc(100% - 600px);
     min-width: 320px;
     background: #ffffff;
-    font-size: 18px;
+    font-size: 120%;
 		font: normal 18px 'got-medium', sans-serif;
+		text-align: center;
+		line-height: 125%;
   }
 }
 
@@ -352,7 +380,7 @@ body {
 	height: auto;
 	font: normal 16px 'got-medium', sans-serif;
 }
-.own-footer h3{
+.own-footer h4{
   color: #ffffff;
 }
 .own-footer a:link {
@@ -397,26 +425,72 @@ body {
 .own-bold{
   font-weight: bold;
 }
+@media (min-width:555px) {
+	.own-menuButtons{
+	  float: right;
+	  font: normal 18px 'got-black', sans-serif;
 
-.own-menuButtons{
-  float: right;
-  /*margin-right: 50px;*/
-  font: normal 18px 'got-black', sans-serif;
+		-webkit-transition: all 0.5s; /* Safari */
+		transition: all 0.5s;
+	}
+	.own-menuButtons a:link{
+	  text-decoration: none;
+	  color: #000000;
+	  font-weight: bold;
+	  display: inline-block;
+	  margin: 10px;
+	  font-size: 20px;
+		padding-bottom: 5px;
+	}
+	.own-menuButtons a:visited{
+	  color: #000000;
+	}
+	.own-menuButtons a:hover{
+	  color: #C85127;
+	}
+
+	.own-showMenuButton{
+		display: none;
+	}
 }
-.own-menuButtons a:link{
-  text-decoration: none;
-  color: #000000;
-  font-weight: bold;
-  display: inline-block;
-  margin: 10px;
-  font-size: 20px;
+@media (max-width:555px) {
+	.own-menuButtons{
+	  /*float: right;*/
+		text-align: center;
+	  font: normal 18px 'got-black', sans-serif;
+		display: none;
+
+		-webkit-transition: all 0.5s; /* Safari */
+		transition: all 0.5s;
+	}
+	.own-menuButtons a:link{
+	  text-decoration: none;
+	  color: #000000;
+	  font-weight: bold;
+	  display: block;
+	  margin: 10px;
+	  font-size: 20px;
+		padding-bottom: 5px;
+	}
+	.own-menuButtons a:visited{
+	  color: #000000;
+	}
+	.own-menuButtons a:hover{
+	  color: #C85127;
+	}
+
+	.own-showMenuButton{
+		display: inline-block;
+		cursor: pointer;
+		float: right;
+		margin-right: 60px;
+		margin-top: 20px;
+	}
 }
-.own-menuButtons a:visited{
-  color: #000000;
+.own-displayShowBlock{
+	display: block!important;
 }
-.own-menuButtons a:hover{
-  color: #C85127;
-}
+
 .own-currentPageMenu{
   color: #C85127!important;
   border-bottom: 3px solid #C85127;
@@ -432,33 +506,65 @@ body {
   width: 100%;
   text-align: center;
 }
-.own-linksLeft{
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 20px;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  max-width: 100px;
-  font: normal 18px 'got-medium', sans-serif;
+@media (min-width:990px) {
+	.own-linksLeft{
+	  display: inline-block;
+	  vertical-align: top;
+	  margin-top: 20px;
+	  margin-right: 40px;
+	  margin-bottom: 40px;
+	  max-width: 100px;
+	  font: normal 18px 'got-medium', sans-serif;
+	}
+	.own-linksLeft a:link{
+	  text-decoration: none;
+	  color: #000000;
+	  font-weight: bold;
+	  display: block;
+	  margin: 10px;
+	  margin-bottom: 30px;
+	  text-align: center;
+	  border-top: 1px solid #000000;
+	  padding-top: 20px;
+	  width: 120px;
+	}
+	.own-linksLeft a:visited{
+	  color: #000000;
+	}
+	.own-linksLeft a:hover{
+	  color: #C85127;
+	}
 }
-.own-linksLeft a:link{
-  text-decoration: none;
-  color: #000000;
-  font-weight: bold;
-  display: block;
-  margin: 10px;
-  margin-bottom: 30px;
-  text-align: center;
-  border-top: 1px solid #000000;
-  padding-top: 20px;
-  width: 120px;
+@media (max-width:990px) {
+	.own-linksLeft{
+	  display: inline-block;
+	  vertical-align: top;
+	  margin-top: 20px;
+	  margin-right: 40px;
+	  margin-bottom: 40px;
+	  /*max-width: 100px;*/
+	  font: normal 18px 'got-medium', sans-serif;
+	}
+	.own-linksLeft a:link{
+	  text-decoration: none;
+	  color: #000000;
+	  font-weight: bold;
+	  display: inline-block;
+	  margin: 10px;
+	  margin-bottom: 30px;
+	  text-align: center;
+	  border-top: 1px solid #000000;
+	  padding-top: 20px;
+	  width: 120px;
+	}
+	.own-linksLeft a:visited{
+	  color: #000000;
+	}
+	.own-linksLeft a:hover{
+	  color: #C85127;
+	}
 }
-.own-linksLeft a:visited{
-  color: #000000;
-}
-.own-linksLeft a:hover{
-  color: #C85127;
-}
+
 .own-orange{
   color: #C85127!important;
 }
@@ -469,6 +575,7 @@ body {
   vertical-align: top;
   padding: 10px;
   padding-bottom: 40px;
+	line-height: 120%;
 }
 .own-projecteText h3{
     font: normal 25px 'got-medium', sans-serif;
@@ -520,7 +627,8 @@ body {
     max-width: 600px;
     text-align: left;
     font-weight: bold;
-		font: normal 22px 'got-medium', sans-serif;
+		font: normal 18px 'got-medium', sans-serif;
+		line-height: 115%;
   }
 }
 @media (min-width:1200px) {
@@ -534,6 +642,7 @@ body {
     font-weight: bold;
     font-size: 22px;
 		font: normal 22px 'got-medium', sans-serif;
+		line-height: 115%;
   }
 }
 
@@ -563,8 +672,21 @@ body {
   text-align: left;
   vertical-align: top;
   padding-bottom: 40px;
+	line-height: 120%;
 }
 
 .own-inlineBlock{
 	display: inline-block!important;
+}
+
+
+.own-agendaData{
+	font-weight: bold;
+	color: #C85127;
+}
+.own-agendaTitol{
+	font-weight: bold;
+}
+.own-agendaContent{
+	font-style: italic;
 }

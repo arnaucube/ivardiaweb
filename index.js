@@ -12,7 +12,15 @@ function OnLoadDefault(){
         });
     });
 }
-
+/*
+- La señora haciendo el saludo de la victoria (_013)
+- Paisaje Sol (_008)
+- Paisaje Sol niñxs (004)
+- Señora en balcón (la que se vea bien, he visto que no está bien pillado el frame)) (_036)
+- Barricadas (020, 026, 028, 001)
+- Paisajes (057, 059, 058, 045)
+- Gente (014, 074, 068, 071, 012)
+*/
 function OnLoadIndex(){
   OnLoadDefault();
   var numImg=3;
@@ -53,5 +61,25 @@ function OnClickCampanyesDeSuport(){
     document.getElementById("desplegable").className="own-desplegableAmagat";
   }else{
     document.getElementById("desplegable").className="own-desplegable";
+  }
+}
+
+$(window).bind('scroll', function () {
+  console.log($(window).scrollTop());
+    if ($(window).scrollTop() > 25) {
+        //$('.menu').addClass('own-menuFixed');
+        document.getElementById("menu").className="own-menuFixed";
+    } else {
+        //$('.menu').removeClass('own-menuFixed');
+        document.getElementById("menu").className="own-menu";
+    }
+});
+
+function ShowMenuButtons(){
+  if(document.getElementById("menuButtons").className.indexOf("own-displayShowBlock") > -1)
+  {
+    document.getElementById("menuButtons").className="own-menuButtons";
+  }else{
+    document.getElementById("menuButtons").className+=" own-displayShowBlock";
   }
 }
