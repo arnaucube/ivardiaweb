@@ -519,7 +519,6 @@ body {
 .own-nosaltresContent{
   width: 100%;
   text-align: center;
-	margin-top: 30%;
 }
 @media (min-width:990px) {
 	.own-linksLeft{
@@ -714,7 +713,12 @@ body {
 	background: #ECB7A9;
 	border: 0px solid #ffffff;
 }
-
+.own-projecteContent{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 30px;
+	margin-top: 30%;
+}
 .own-contacteContent{
   width: 100%;
   text-align: center;

@@ -1,7 +1,7 @@
 //http://placehold.it/1920x1080
 
 function OnLoadDefault(){
-  $(document).ready(function(e) {
+  /*$(document).ready(function(e) {
       $('#HTMLmenu').load('HTMLmenu.html',function(){
         //
       });
@@ -10,6 +10,16 @@ function OnLoadDefault(){
         $('#HTMLfooter').load('HTMLfooter.html',function(){
           //
         });
+    });*/
+    $(window).bind('scroll', function () {
+      console.log($(window).scrollTop());
+        if ($(window).scrollTop() > 25) {
+            //$('.menu').addClass('own-menuFixed');
+            document.getElementById("menu").className="own-menuFixed";
+        } else {
+            //$('.menu').removeClass('own-menuFixed');
+            document.getElementById("menu").className="own-menu";
+        }
     });
 }
 /*
@@ -64,16 +74,7 @@ function OnClickCampanyesDeSuport(){
   }
 }
 
-$(window).bind('scroll', function () {
-  console.log($(window).scrollTop());
-    if ($(window).scrollTop() > 25) {
-        //$('.menu').addClass('own-menuFixed');
-        document.getElementById("menu").className="own-menuFixed";
-    } else {
-        //$('.menu').removeClass('own-menuFixed');
-        document.getElementById("menu").className="own-menu";
-    }
-});
+
 
 function ShowMenuButtons(){
   if(document.getElementById("menuButtons").className.indexOf("own-displayShowBlock") > -1)
