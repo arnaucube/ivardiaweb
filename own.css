@@ -73,7 +73,7 @@ body {
 }
 
 
-/*@media (min-width:900px) {
+@media (min-width:900px) {
   .own-container{
     padding-left: 80px;
     padding-right: 80px;
@@ -84,7 +84,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-}*/
+}
 
 /* index */
 
@@ -167,6 +167,13 @@ body {
   /*margin-left: 30px;*/
   width: 200px;
 
+}
+
+.own-whiteRecuadre{
+	border: 1px solid #ffffff!important
+}
+.own-whiteText{
+	color: #ffffff!important;;
 }
 .own-whiteText a:link{
   color: #ffffff!important;
@@ -483,8 +490,12 @@ body {
 		display: inline-block;
 		cursor: pointer;
 		float: right;
-		margin-right: 60px;
+		margin-right: 20px;
 		margin-top: 20px;
+		font-weight: bold;
+
+		padding: 10px;
+		border: 1px solid #000000;
 	}
 }
 .own-displayShowBlock{
@@ -501,10 +512,14 @@ body {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 30px;
+
+	position: absolute;
+	left: 0px;
 }
 .own-nosaltresContent{
   width: 100%;
   text-align: center;
+	margin-top: 30%;
 }
 @media (min-width:990px) {
 	.own-linksLeft{
@@ -524,7 +539,7 @@ body {
 	  margin: 10px;
 	  margin-bottom: 30px;
 	  text-align: center;
-	  border-top: 1px solid #000000;
+	  /*border-top: 1px solid #000000;*/
 	  padding-top: 20px;
 	  width: 120px;
 	}
@@ -553,7 +568,7 @@ body {
 	  margin: 10px;
 	  margin-bottom: 30px;
 	  text-align: center;
-	  border-top: 1px solid #000000;
+	  /*border-top: 1px solid #000000;*/
 	  padding-top: 20px;
 	  width: 120px;
 	}
@@ -563,6 +578,10 @@ body {
 	.own-linksLeft a:hover{
 	  color: #C85127;
 	}
+}
+
+.own-hr{
+	border: 1px solid #000000;
 }
 
 .own-orange{
@@ -689,4 +708,41 @@ body {
 }
 .own-agendaContent{
 	font-style: italic;
+}
+
+.own-tableRed{
+	background: #ECB7A9;
+	border: 0px solid #ffffff;
+}
+
+.own-contacteContent{
+  width: 100%;
+  text-align: center;
+	padding-bottom: 30px;
+}
+.own-contacteTitle{
+  /*font-size: 45px;*/
+  font-weight: bold;
+  padding-left: 7%;
+  text-align: left;
+	top: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font: normal 55px 'got-black', sans-serif;
+}
+.own-contacteText{
+  display: inline-block;
+  max-width: 600px;
+  text-align: left;
+  vertical-align: top;
+  padding-bottom: 40px;
+	line-height: 180%!important;
+	font: normal 16px 'got-medium', sans-serif;
+}
+.own-contacteImage{
+	/*float: left;*/
+	display: inline-block;
+	max-width: 400px;
+	margin-right: 40px;
+	margin-bottom: 30px;
 }

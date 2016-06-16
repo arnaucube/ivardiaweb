@@ -83,3 +83,11 @@ function ShowMenuButtons(){
     document.getElementById("menuButtons").className+=" own-displayShowBlock";
   }
 }
+function ShowMenuButtonsIndex(){
+  if(document.getElementById("menuButtons").className.indexOf("own-displayShowBlock") > -1)
+  {
+    document.getElementById("menuButtons").className="own-menuButtons own-whiteText";
+  }else{
+    document.getElementById("menuButtons").className+=" own-displayShowBlock";
+  }
+}
