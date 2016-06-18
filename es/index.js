@@ -41,30 +41,30 @@ function OnLoadDefault(){
 function OnLoadIndex(){
   actualWindow="index";
   OnLoadDefault();
-  var numImg=3;
-  var visibleImg=1;
+  var numImg=1;
+  var visibleImg=0;
   setInterval(function(){
 
     console.log(numImg);
     console.log("visibleImg: " + visibleImg);
 
 
-    document.getElementById("backgroundImage"+visibleImg).className+=" own-opacity0";
-    document.getElementById("backgroundImage"+visibleImg).src="imatges/background/background"+numImg+".jpg";
+    document.getElementById("backgroundImage"+visibleImg).className="own-indexBackgroundImage";
     if(visibleImg==0){
       visibleImg=1;
     }else{
       visibleImg=0;
     }
 
-    document.getElementById("backgroundImage"+visibleImg).className="own-indexBackgroundImage";
+    document.getElementById("backgroundImage"+visibleImg).className+=" own-opacity0";
+    document.getElementById("backgroundImage"+visibleImg).src="imatges/background/background"+numImg+".jpg";
 
     numImg++;
     if(numImg>9)
     {
       numImg=0;
     }
-  }, 4000);
+  }, 10000);
 }
 function OnLoadNosaltres(){
   OnLoadDefault();
@@ -76,7 +76,7 @@ function OnLoadContacte(){
   OnLoadDefault();
   setTimeout(function(){
     document.getElementsByClassName("own-menuButtons")[0].childNodes[5].className="own-currentPageMenu";
-  }, 500);
+  }, 8000);
 }
 
 function OnClickCampanyesDeSuport(){

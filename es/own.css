@@ -174,11 +174,11 @@ body {
   .own-overImage-logo{
     margin-left: 80px;
     width: 200px;
-    transition: all 1s;
+    transition: all 0.5s;
 
   }
   .own-overImage-logo_index{
-    margin-left: -80px;
+    margin-left: 0px;
 
   }
 }
@@ -192,7 +192,7 @@ body {
 }
 .own-overImage-logo-small{
   width: 100px!important;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .own-whiteRecuadre{
@@ -442,9 +442,12 @@ body {
 @media (min-width:900px) {
   .own-lang{
     text-align: right;
-    /*margin-right: 50px;*/
+    margin-right: 80px;
     display: block;
     margin-top: 20px;
+  }
+  .own-lang_marginIndex{
+    margin-right:0px;
   }
 }
 @media (max-width:900px) {
@@ -471,6 +474,7 @@ body {
 .own-menuButtons-small{
   margin-top: 0px!important;
 }
+
 @media (min-width:555px) {
 	.own-menuButtons{
 	  float: right;
@@ -479,7 +483,11 @@ body {
 		-webkit-transition: all 0.5s; /* Safari */
 		transition: all 0.5s;
     margin-top: 20px;
+    margin-right: 80px;
 	}
+  .own-menuButtons_Index{
+    margin-right: 0px;
+  }
 	.own-menuButtons a:link{
 	  text-decoration: none;
 	  color: #000000;
