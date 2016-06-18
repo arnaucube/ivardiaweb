@@ -88,7 +88,7 @@ body {
 
 /* index */
 
-@media (min-width:900px) {
+@media (min-width:1080px) {
   .own-indexBackgroundImage{
     width: 100%;
     /*height: 100%;*/
@@ -110,10 +110,10 @@ body {
 	}
 }
 
-@media (max-width:900px) {
+@media (max-width:1080px) {
   .own-indexBackgroundImage{
     /*width: 100%;*/
-    height: 100%;
+    height: 110%;
     z-index: -2;
     position: fixed;
     left: 0px;
