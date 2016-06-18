@@ -41,15 +41,28 @@
       <img class='own-imgHeader' src='imatges/header1.png' />
 
 
-      <div id='desplegable' class='own-desplegableAmagat'>
-        <h3>El nostre projecte, un viatge a Bakur</h3>
-        El 19 d’octubre de 2015 vam decidir viatjar al Kurdistan amb unes motxilles plenes de càmeres, micros, llibretes, pors i esperances. Feia mesos que gestàvem la idea. D’ençà que havíem descobert el moviment kurd seguíem amb interès i admiració tant la seva resistència com la seva proposta política: un sistema basat en el municipalisme, l’ecologia social i l’alliberament de la dona, tot això alimentat per un poble lluitador, crític i solidari.
-      </div>
+
       <div class='own-projecteContent'>
         <div class='own-linksLeft'>
-          <a href="projecte.html">PROJECTE</a>
-          <a class='own-orange' href='bakur.html'>BAKUR</a>
-          <a href='agenda.html'>AGENDA</a>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="projecte.html">PROJECTE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a class='own-orange' href='bakur.html'>BAKUR</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href='agenda.html'>AGENDA</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class='own-projecteText'>
@@ -63,18 +76,76 @@
           Amb aquest imaginari de poble combatent han desenvolupat, basant-se en les idees del Confederalisme Democràtic ideat per Abdullah Öcalan, actual líder del PKK (Partit dels Treballadors del Kurdistan), un seguit d’institucions i cooperatives eficaces que han enfortit el teixit social i han desmonopolitzat l'acció de l'Estat en la societat civil kurda. És per això que a Bakur l’educació, la salut, la justícia o la defensa tenen avui en dia nom en kurd.
 
           <br><br>
-          <img style="max-width: 600px;" src='imatges/mapaKurdistan.png' />
+          <!--<img style="max-width: 600px;" src='imatges/mapaKurdistan.png' />-->
           </div>
         <div class='own-rightBox'>
-          <a href="javascript:OnClickCampanyesDeSuport();" onmouseover="this.childNodes[1].src='icones/i_campanyessuport_taronja.png'" onmouseout="this.childNodes[1].src='icones/i_campanyessuport.png'">
+
+          <!--<a href="javascript:NoFunction();" data-toggle="collapse" data-target="#demo" onmouseover="this.childNodes[1].src='icones/i_campanyessuport_taronja.png'" onmouseout="this.childNodes[1].src='icones/i_campanyessuport.png'">
             <img class='own-socialNetwork' src='icones/i_campanyessuport.png' />   Campanyes de suport
           </a>
+          <div id="demo" class="collapse own-collapse">
+            <h3>El nostre projecte, un viatge a Bakur</h3>
+            El 19 d’octubre de 2015 vam decidir viatjar al Kurdistan amb unes motxilles plenes de càmeres, micros, llibretes, pors i esperances. Feia mesos que gestàvem la idea. D’ençà que havíem descobert el moviment kurd seguíem amb interès i admiració tant la seva resistència com la seva proposta política: un sistema basat en el municipalisme, l’ecologia social i l’alliberament de la dona, tot això alimentat per un poble lluitador, crític i solidari.
+          </div>
           <a href="#" onmouseover="this.childNodes[1].src='icones/i_articles_taronja.png'" onmouseout="this.childNodes[1].src='icones/i_articles.png'">
             <img class='own-socialNetwork' src='icones/i_articles.png' />   Artícles
           </a>
           <a href='#' onmouseover="this.childNodes[1].src='icones/i_teaser_taronja.png'" onmouseout="this.childNodes[1].src='icones/i_teaser.png'">
             <img class='own-socialNetwork' src='icones/i_teaser.png' />   Vídeo
-          </a>
+          </a>-->
+
+
+          <div class="panel-group own-maxWidth250px" id="accordion">
+            <div class="panel panel-default own-anulaPanel">
+              <div class="">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><img class='own-socialNetwork' src='icones/i_campanyessuport.png' />   Campanyes de suport</a>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body own-maxWidth250px">
+                  <a href='https://azadiplataforma.wordpress.com/crida-a-la-solidaritat-amb-kurdistan/' target='_blank'>Crida a la solidaritat amb el Kurdistan, campanya de suport engegada per Azadï Plataforma</a>
+
+                  <a href='https://coopfunding.net/en/campaigns/feed-the-revolution/' target='_blank'>Rojava autosuficient, campanya d’ajut engegada per Comité Alternatiu de Rojava</a>
+
+                  <a href='http://www.migranodearena.org/es/reto/7852/la-vuelta-al-cole-en-kobane/' target='_blank'>Campanya “Vuelta al cole en Kobane”, engegada per Kurdiscat</a>
+
+                  <a href='https://coopfunding.net/es/campaigns/apoyo-a-kobane/' target='_blank'>Campanya “Apoyo a Kobane”, engegada per Heyva Sor</a>
+
+                  <a href='http://delistthepkk.com' target='_blank'>Campanya per retirar el PKK del llistat d’organitzacions terroristes, engegada per diversos col·lectius</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default own-anulaPanel">
+              <div class="">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><img class='own-socialNetwork' src='icones/i_articles.png' />   Artícles</a>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body own-maxWidth250px">
+                  <a href='http://anarkismo.net/article/28963' target='_blank'> Resum de l’actual situació a Bakur, per Erdal Balsak i Jean Robert i publicat a Anarkismo.net</a>
+                  <a href='https://azadiplataforma.wordpress.com/2016/04/02/construint-democracia-sense-estat/' target='_blank'>Confederalisme Democràtic. Democràcia sense Estat, per Dilar Dirik a ROAR Magazine i traduït per Azadï Plataforma</a>
+                  <a href='https://rojavaazadimadrid.wordpress.com/2016/03/19/una-revolucion-femenina-en-marcha-en-kurdistan-del-destierro-de-los-matrimonios-forzados-a-la-copresidencia-en-todas-las-organizaciones-de-la-sociedad-civil-y-politica/' target='_blank'>Les dones kurdes a Bakur, per André Métayer i traduït per Rojava Azadï Madrid</a>
+                  <a href='https://rojavaazadimadrid.wordpress.com/2015/10/28/cronica-las-cooperativas-de-van-un-modelo-en-desarrollo-17-10-15/' target='_blank'>Cooperativsme a Bakur, per Sara A. de Rojava Azadï Madrid</a>
+                  <a href='https://newrozeuskalkurduelkartea.wordpress.com/2015/12/28/dtk-publico-su-resolucion-respecto-al-autogobierno/' target='_blank'>La DTK. Què és i què fa, per Firat News i Traduït per Newroz Euskal Kurdu Elkartea</a>
+                  <a href='https://rojavaazadimadrid.wordpress.com/2015/12/21/los-kurdos-resisten-ante-los-toques-de-queda-impuestos-por-el-estado-turco/' target='_blank'>Turquia assetjant Bakur, per Joris Leverink, de ROAR Magazine, i traduït per Rojava Azadî Madrid</a>
+                  <a href='https://rojavaazadimadrid.wordpress.com/2016/01/06/represion-y-resistencia-en-amed/' target='_blank'>Amed. Repressió i resistència, per Rojava Azadî Madrid</a>
+                  <a href='https://rojavaazadimadrid.wordpress.com/2016/02/15/ministro-de-interior-de-turquia-la-operacion-de-cizre-ha-terminado-satisfactoriamente/' target='_blank'>Cizîr. Una massacre silenciada, per Kurdish Question i traduït per Rojava Azadî Madrid</a>
+                  <a href='https://rojavaazadimadrid.wordpress.com/2015/12/12/fotos-la-destruccion-de-un-barrio-kurdo-bajo-el-toque-de-queda/' target='_blank'> Surici. Una imatge val més que mil paraules, per ROAR Magazine i traduït per Rojava Azadï Madrid</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default own-anulaPanel">
+              <div class="">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><img class='own-socialNetwork' src='icones/i_teaser.png' />   Vídeos</a>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body own-maxWidth250px">
+                  <a href='https://www.youtube.com/watch?v=uWaFDT3Qcqo' target='_blank'>Apropa’t a Bakur, per Azadî Plataforma</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 </div><!-- /container -->

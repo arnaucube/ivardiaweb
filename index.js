@@ -17,10 +17,9 @@ function OnLoadDefault(){
       $(window).bind('scroll', function () {
         console.log($(window).scrollTop());
           if ($(window).scrollTop() > 25) {
-              //$('.menu').addClass('own-menuFixed');
+              //document.getElementById("menu").className="own-menuFixed";
               document.getElementById("menu").className="own-menuFixed";
           } else {
-              //$('.menu').removeClass('own-menuFixed');
               document.getElementById("menu").className="own-menu";
           }
       });
@@ -69,16 +68,26 @@ function OnLoadNosaltres(){
     document.getElementsByClassName("own-menuButtons")[0].childNodes[3].className="own-currentPageMenu";
   }, 500);
 }
+function OnLoadContacte(){
+  OnLoadDefault();
+  setTimeout(function(){
+    document.getElementsByClassName("own-menuButtons")[0].childNodes[5].className="own-currentPageMenu";
+  }, 500);
+}
 
 function OnClickCampanyesDeSuport(){
-  /*
+
   if(document.getElementById("desplegable").className=="own-desplegable")
   {
     document.getElementById("desplegable").className="own-desplegableAmagat";
   }else{
+    var auxhtml="";
+    auxhtml+="<h3>El nostre projecte, un viatge a Bakur</h3>";
+    auxhtml+="El 19 d’octubre de 2015 vam decidir viatjar al Kurdistan amb unes motxilles plenes de càmeres, micros, llibretes, pors i esperances. Feia mesos que gestàvem la idea. D’ençà que havíem descobert el moviment kurd seguíem amb interès i admiració tant la seva resistència com la seva proposta política: un sistema basat en el municipalisme, l’ecologia social i l’alliberament de la dona, tot això alimentat per un poble lluitador, crític i solidari.";
+    document.getElementById("desplegable").innerHTML=auxhtml;
     document.getElementById("desplegable").className="own-desplegable";
   }
-  */
+
 }
 
 
@@ -98,4 +107,9 @@ function ShowMenuButtonsIndex(){
   }else{
     document.getElementById("menuButtons").className+=" own-displayShowBlock";
   }
+}
+
+
+function NoFunction(){
+  
 }
