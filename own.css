@@ -281,6 +281,15 @@ body {
   font-size: 18px;
 	cursor: pointer;
 }
+.own-teaser a:link{
+  color: #ffffff!important;
+}
+.own-teaser a:visited{
+  color: #ffffff!important;
+}
+.own-teaser a:hover{
+  color: #ffffff!important;
+}
 
 .temp-marge1{
   display: inline-block;
