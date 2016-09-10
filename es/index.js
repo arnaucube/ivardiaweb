@@ -64,7 +64,7 @@ function OnLoadIndex(){
     {
       numImg=0;
     }
-  }, 10000);
+}, 4000);
 }
 function OnLoadNosaltres(){
   OnLoadDefault();
